@@ -1,0 +1,32 @@
+{
+  "id": "60f204f8-8ca4-4e88-b373-a508d96dd9a8",
+  "name": "Job Costs Report",
+  "publisher": "Leo Sammon",
+  "version": "1.1.2.0",
+  "brief": "Adds WorkFlowMax-esque reports to jobs",
+  "description": "A simple tool to retreive job costs / purchase orders and vendor infomation from a job.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "icon.jpg",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "24.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "13.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
