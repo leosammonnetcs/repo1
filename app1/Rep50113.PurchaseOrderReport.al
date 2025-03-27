@@ -24,7 +24,7 @@ report 50113 "Purchase Order Report"
             column(Description; "Description") { }
             column(UnitCostLCY; "Unit Cost (LCY)") { }
             column(Job_Total_Price__LCY_; "Job Total Price (LCY)") { }
-            column(Outstanding_Amount; "Outstanding Amount") { }
+            column(Outstanding_Amount_Excl__VAT; "Outstanding Amount Excl. VAT") { }
             column(VendorNo; "Vendor No.") { }
             column(VendorName; "Vendor Name") { }
         }
@@ -76,7 +76,7 @@ report 50113 "Purchase Order Report"
                 TempPurchaseOrder."Description" := PurchaseLine.Description;
                 TempPurchaseOrder."Unit Cost (LCY)" := PurchaseLine."Unit Cost (LCY)";
                 TempPurchaseOrder."Job Total Price (LCY)" := PurchaseLine."Job Total Price (LCY)";
-                TempPurchaseOrder."Outstanding Amount" := PurchaseLine."Outstanding Amount";
+                TempPurchaseOrder."Outstanding Amount Excl. VAT" := PurchaseLine."Outstanding Amt. Ex. VAT (LCY)";
 
                 // Retrieve vendor information
                 if PurchaseHeader.Get(PurchaseLine."Document Type", PurchaseLine."Document No.") then begin
@@ -110,7 +110,7 @@ report 50113 "Purchase Order Report"
             TempPurchaseOrderVendor.Description := PurchaseOrderVendorQuery.Description;
             TempPurchaseOrderVendor."Unit Cost (LCY)" := PurchaseOrderVendorQuery.UnitCostLCY;
             TempPurchaseOrderVendor."Job Total Price (LCY)" := PurchaseOrderVendorQuery.Job_Total_Price__LCY_;
-            TempPurchaseOrderVendor."Outstanding Amount" := PurchaseOrderVendorQuery.Outstanding_Amount;
+            TempPurchaseOrderVendor."Outstanding Amount Excl. VAT" := PurchaseOrderVendorQuery.Outstanding_Amt__Ex__VAT__LCY_;
             TempPurchaseOrderVendor."Vendor No." := PurchaseOrderVendorQuery.Buy_from_Vendor_No;
             TempPurchaseOrderVendor."Vendor Name" := PurchaseOrderVendorQuery.Buy_from_Vendor_Name;
             TempPurchaseOrderVendor.Insert();

@@ -49,7 +49,7 @@ query 50121 PurchaseOrderVendor
             {
 
             }
-            column(Outstanding_Amount; "Outstanding Amount")
+            column(Outstanding_Amt__Ex__VAT__LCY_; "Outstanding Amt. Ex. VAT (LCY)")
             {
 
             }

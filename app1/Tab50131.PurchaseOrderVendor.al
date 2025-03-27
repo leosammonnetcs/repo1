@@ -19,7 +19,7 @@ table 50131 "Purchase Order Vendor Temp"
         field(11; "Description"; Text[100]) { }
         field(12; "Unit Cost (LCY)"; Decimal) { }
         field(13; "Job Total Price (LCY)"; Decimal) { }
-        field(14; "Outstanding Amount"; Decimal) { }
+        field(14; "Outstanding Amount Excl. VAT"; Decimal) { }
         field(15; "Vendor No."; Code[20]) { }
         field(16; "Vendor Name"; Text[100]) { }
     }
